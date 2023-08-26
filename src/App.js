@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Avatar from "./Avatar";
+import Intro from "./Intro";
+import SkillList from "./SkillList";
+import Photo from "./Uzoma.jpeg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="card">
+      <Avatar
+        img={Photo}
+        name="Uzoma Akpala"
+        linkedin={"www.linkedin.com/in/uzoma-akpala-a9b353205/ "}
+        gitHub={"github.com/UzomaAkpala"}
+        phone={"+2347065909727"}
+      />
+      <div className="data">
+        <Intro />
+        <SkillList />
+      </div>
     </div>
   );
 }
